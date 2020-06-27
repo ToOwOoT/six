@@ -1,0 +1,8 @@
+E:\VS Working\.net core\Lunch\Lunch.Data\bin\Debug\netcoreapp3.1\Lunch.Data.deps.json
+E:\VS Working\.net core\Lunch\Lunch.Data\bin\Debug\netcoreapp3.1\Lunch.Data.dll
+E:\VS Working\.net core\Lunch\Lunch.Data\bin\Debug\netcoreapp3.1\Lunch.Data.pdb
+E:\VS Working\.net core\Lunch\Lunch.Data\obj\Debug\netcoreapp3.1\Lunch.Data.csprojAssemblyReference.cache
+E:\VS Working\.net core\Lunch\Lunch.Data\obj\Debug\netcoreapp3.1\Lunch.Data.AssemblyInfoInputs.cache
+E:\VS Working\.net core\Lunch\Lunch.Data\obj\Debug\netcoreapp3.1\Lunch.Data.AssemblyInfo.cs
+E:\VS Working\.net core\Lunch\Lunch.Data\obj\Debug\netcoreapp3.1\Lunch.Data.dll
+E:\VS Working\.net core\Lunch\Lunch.Data\obj\Debug\netcoreapp3.1\Lunch.Data.pdb

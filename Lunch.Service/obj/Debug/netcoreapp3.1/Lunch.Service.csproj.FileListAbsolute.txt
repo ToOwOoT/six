@@ -1,0 +1,11 @@
+E:\VS Working\.net core\Lunch\Lunch.Service\bin\Debug\netcoreapp3.1\Lunch.Service.deps.json
+E:\VS Working\.net core\Lunch\Lunch.Service\bin\Debug\netcoreapp3.1\Lunch.Service.dll
+E:\VS Working\.net core\Lunch\Lunch.Service\bin\Debug\netcoreapp3.1\Lunch.Service.pdb
+E:\VS Working\.net core\Lunch\Lunch.Service\bin\Debug\netcoreapp3.1\Lunch.Data.dll
+E:\VS Working\.net core\Lunch\Lunch.Service\bin\Debug\netcoreapp3.1\Lunch.Data.pdb
+E:\VS Working\.net core\Lunch\Lunch.Service\obj\Debug\netcoreapp3.1\Lunch.Service.csprojAssemblyReference.cache
+E:\VS Working\.net core\Lunch\Lunch.Service\obj\Debug\netcoreapp3.1\Lunch.Service.AssemblyInfoInputs.cache
+E:\VS Working\.net core\Lunch\Lunch.Service\obj\Debug\netcoreapp3.1\Lunch.Service.AssemblyInfo.cs
+E:\VS Working\.net core\Lunch\Lunch.Service\obj\Debug\netcoreapp3.1\Lunch.Service.csproj.CopyComplete
+E:\VS Working\.net core\Lunch\Lunch.Service\obj\Debug\netcoreapp3.1\Lunch.Service.dll
+E:\VS Working\.net core\Lunch\Lunch.Service\obj\Debug\netcoreapp3.1\Lunch.Service.pdb

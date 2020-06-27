@@ -1,0 +1,57 @@
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.deps.json
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.runtimeconfig.json
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.runtimeconfig.dev.json
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.dll
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.pdb
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.Views.dll
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.Views.pdb
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.csprojAssemblyReference.cache
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.csproj.CoreCompileInputs.cache
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorAssemblyInfo.cache
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorAssemblyInfo.cs
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.AssemblyInfoInputs.cache
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.AssemblyInfo.cs
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.TagHelpers.input.cache
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.TagHelpers.output.cache
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorCoreGenerate.cache
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorTargetAssemblyInfo.cache
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorTargetAssemblyInfo.cs
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.Views.pdb
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.dll
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.pdb
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.csproj.CopyComplete
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index2.g.cshtml.cs
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index3.g.cshtml.cs
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index4.g.cshtml.cs
+E:\VSProject\NetCoreDemo\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index5.g.cshtml.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\appsettings.Development.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\appsettings.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\libman.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.deps.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.runtimeconfig.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.runtimeconfig.dev.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.dll
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.pdb
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.Views.dll
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\bin\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.Views.pdb
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.csprojAssemblyReference.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorAssemblyInfo.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorAssemblyInfo.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.AssemblyInfoInputs.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.AssemblyInfo.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.TagHelpers.input.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.TagHelpers.output.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorCoreGenerate.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index2.cshtml.g.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index3.cshtml.g.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index4.cshtml.g.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index5.cshtml.g.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorTargetAssemblyInfo.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.RazorTargetAssemblyInfo.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.Views.pdb
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.dll
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.pdb
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\NetCoreVueElementUIDemo\obj\Debug\netcoreapp2.2\NetCoreVueElementUIDemo.csproj.CopyComplete

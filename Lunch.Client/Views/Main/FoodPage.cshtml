@@ -1,0 +1,363 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+
+    <link rel="stylesheet" href="~/css/main.css" />
+    <link rel="stylesheet" href="~/lib/element-ui/theme-chalk/index.css" />
+    <script type="text/javascript" src="~/lib/vue/vue.js"></script>
+    <script type="text/javascript" src="~/lib/element-ui/index.js"></script>
+    <script type="text/javascript" src="~/js/axios.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <el-container>
+            <el-header>
+                <el-row>
+                    <el-col :span="12" style="color: #fff;text-align: left; font-size: 40px;">
+                        Lunch
+                    </el-col>
+                    <el-col :span="12">
+                        <div style="text-align: right; padding-top: 20px; font-size: 14px;">
+                            <div v-if="username" style="color: #fff">
+                                欢迎您, {{username}} &nbsp;&nbsp;
+                                <a href="/Home/UpdatePwd" style="color: #fff">修改密码</a>
+                                <a href="/Home/Logout" style="color: #fff">退出</a>
+                            </div>
+                            <div v-else>
+                                <a href="/Home/Login" style="color: #fff">登录</a>
+                            </div>
+                        </div>
+                    </el-col>
+                </el-row>
+
+            </el-header>
+            <div class="main app-list-container">
+                <div style="margin: auto;" class="goods-list-container">
+                    <el-row :gutter="15">
+                        <el-col :span="24" style="text-align: right">
+                            <el-select v-model="type" placeholder="请选择">
+                                <el-option v-for="item in options"
+                                           :key="item"
+                                           :label="item"
+                                           :value="item"
+                                           @@change="getData()">
+                                </el-option>
+                            </el-select>
+
+                            <el-input v-model="keyword" placeholder="请输入关键字"></el-input>
+
+                            <el-button type="success" @@click="getData()">查询</el-button>
+                            <el-button type="danger" @@click="showCard()">购物车</el-button>
+                        </el-col>
+                    </el-row>
+
+                    <el-row :gutter="15">
+                        <el-col v-if="list.length == 0">没有数据</el-col>
+                        <el-col v-else v-for="(item, index) in list"
+                                :key="index"
+                                :xs="24"
+                                :sm="8"
+                                :md="8"
+                                :lg="8"
+                                :xl="6">
+                            <el-card :body-style="{ padding: '0px' }" shadow="hover">
+                                <div class="goods-list-card-body">
+                                    <div class="goods-list-tag-group">
+                                        <el-tag v-if="item.stockCount === 0" hit type="danger">缺货</el-tag>
+                                        <el-tag v-else hit type="success">推荐</el-tag>
+                                    </div>
+                                    <div class="goods-list-image-group">
+                                        @*<img :src="item.imgUrl" class="goods-list-image" />*@
+                                        <img :src="'/Main/ViewImge?id=' + item.id"  class="goods-list-image" />
+                                    </div>
+                                    <div class="goods-list-title">{{ item.name }}</div>
+                                    <div class="goods-list-description">{{ item.description }}</div>
+                                    <div class="goods-list-price" style="padding: 0 30px 25px;">
+                                        <span>¥ {{ item.price }} 元</span>
+                                        <span style="float: right" v-if="item.stockCount != 0">
+                                            <el-button type="danger" @@click="addCard(item)">加入购物车</el-button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </el-card>
+                        </el-col>
+                    </el-row>
+
+                </div>
+            </div>
+        </el-container>
+
+
+        <el-dialog title="购物车" :visible.sync="cardVisible">
+            <el-table :data="foodList"
+                      style="width: 100%">
+                <el-table-column prop="name"
+                                 label="菜名">
+                </el-table-column>
+                <el-table-column prop="price" width="100" :formatter="format"
+                                 label="价格">
+                </el-table-column>
+
+                <el-table-column fixed="right"
+                                 label="操作"
+                                 width="180">
+                    <template slot-scope="scope">
+                        <el-button @@click="removeFood(scope.$index)" type="danger" size="small">
+                            移除
+                        </el-button>
+                    </template>
+                </el-table-column>
+            </el-table>
+            <div style="text-align: right">总金额: {{totalPrice}}元</div>
+
+            <div slot="footer" class="dialog-footer">
+                <el-button @@click="closeDialog()">取 消</el-button>
+                <el-button type="primary" @@click="submitCart()">结 算</el-button>
+            </div>
+        </el-dialog>
+    </div>
+</body>
+</html>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            username: '@User.Identity.Name',
+            list: [],
+
+            pageSize: 50,
+            page: 1,
+            total: 0,
+
+            type: "",
+            keyword: "",
+            foodList: [],
+            cardVisible: false,
+
+            options: ['荤菜', '素菜', '水果', '饮料', '酒类', '西餐', '韩式料理', '日式料理']
+        },
+        mounted() {
+            this.getData();
+        },
+        computed: {
+            totalPrice() {
+                return (this.foodList || []).
+                    reduce((a, x) => a +  (x.price || 0), 0);
+            }
+        },
+        methods: {
+            getData() {               
+                axios.post(`/Main/GetFoods?pageIndex=${this.page}&pageSize=${this.pageSize}&type=${this.type}&keyword=${this.keyword}`)
+                    .then(res => {
+                        if (res.data.result == true) {
+                            this.list = res.data.list;
+                        }
+                        else {
+                            alert("系统出错了！");
+                        }
+                });
+            },
+
+            logout() {
+                location.href="/Home/Logout"
+            },
+
+            login() {
+                location.href="/Home/Login"
+            },
+
+            reset() {
+                location.href = '/Home/ChangePassword';
+            },
+
+            addCard(item) {
+                this.foodList.push($.extend(true, {}, item));
+                alert("加入成功，请点击右上角购物车查看详情！");
+            },
+
+            closeDialog() {
+                this.cardVisible = false;
+            },
+
+            showCard() {
+                this.cardVisible = true;
+            },
+
+            removeFood(index) {
+                this.foodList.splice(index, 1);
+            },
+
+            format(row, column) {
+                var val = row.price.toFixed(2);
+
+                return `￥${val}元`;
+            },
+
+            submitCart() {
+                if (!this.username) {
+                    alert("订餐前请先登录！");
+                    location.href = "/Home/Login";
+                    return;
+                }
+                if (this.foodList.length == 0) {
+                    alert("您还没有订餐，请先点单！");
+                    return;
+                }
+
+                var foodIds = [];
+                this.foodList.filter(x => foodIds.push(x.id));
+                var params = `totalPrice=${this.totalPrice}`;
+
+                axios.post("/Main/OrderingFood?" + params, foodIds).then(res => {
+                    if (res.data.result == true) {
+                        alert("下单成功，请耐心等候外卖小哥！");
+                        this.foodList = [];
+                        this.cardVisible = false;
+                    }
+                    else {
+                        alert("系统出错了！");
+                    }
+                });
+            }
+        }
+    });
+</script>
+
+<style>
+    .el-header {
+        color: #333;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+
+    .el-footer {
+        background-color: #B3C0D1;
+        color: #333;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .main {
+        color: #333;
+        margin: auto;
+        background-color: #fff;
+        height: auto;
+        margin-top: 40px;
+        padding: 0 30px 0 30px;
+    }
+
+    body > .el-container {
+        margin-bottom: 40px;
+    }
+
+    .el-row {
+        margin-bottom: 20px;
+    }
+
+    .el-input {
+        width: auto;
+    }
+
+    .el-col {
+        border-radius: 4px;
+    }
+
+    .bg-purple-dark {
+        background: #99a9bf;
+    }
+
+    .bg-purple {
+        background: #d3dce6;
+    }
+
+    .bg-purple-light {
+        background: #e5e9f2;
+    }
+
+    .grid-content {
+        border-radius: 4px;
+        min-height: 36px;
+    }
+
+    .row-bg {
+        padding: 10px 0;
+        background-color: #f9fafc;
+    }
+
+    html body .el-card {
+        margin-bottom: 15px;
+        box-shadow: none;
+    }
+    .el-card {
+        border-radius: 4px;
+        border: 1px solid #ebeef5;
+        background-color: #fff;
+        overflow: hidden;
+        color: #303133;
+        transition: 0.3s;
+    }
+
+    html body .vue-admin-beautiful-wrapper .app-main-container{
+        padding: 15px;
+        background: #fff;
+    }
+
+    .goods-list-container .goods-list-card-body {
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .goods-list-container .goods-list-card-body .goods-list-tag-group {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        z-index: 9;
+    }
+
+    .goods-list-container .goods-list-card-body .goods-list-image-group {
+        height: 400px;
+        overflow: hidden;
+    }
+    
+
+    .goods-list-container .goods-list-card-body .goods-list-image-group .goods-list-image {
+        width: 100%;
+        height: 400px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .goods-list-container .goods-list-card-body .goods-list-title {
+        margin: 8px 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .goods-list-container .goods-list-card-body .goods-list-description {
+        font-size: 14px;
+        color: #808695;
+    }
+
+    .goods-list-container .goods-list-card-body .goods-list-price {
+        margin: 8px 0;
+        font-size: 14px;
+        color: #ff6700;
+    }
+
+    .pull-right {
+        float: right;
+    }
+</style>

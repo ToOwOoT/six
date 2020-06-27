@@ -1,0 +1,16 @@
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAO.deps.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAO.dll
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAO.pdb
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.AssemblyInfoInputs.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.AssemblyInfo.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.dll
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.pdb
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.csprojAssemblyReference.cache
+E:\VS Working\.net core\TakeOutSystem\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAO.deps.json
+E:\VS Working\.net core\TakeOutSystem\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAO.dll
+E:\VS Working\.net core\TakeOutSystem\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAO.pdb
+E:\VS Working\.net core\TakeOutSystem\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.csprojAssemblyReference.cache
+E:\VS Working\.net core\TakeOutSystem\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.AssemblyInfoInputs.cache
+E:\VS Working\.net core\TakeOutSystem\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.AssemblyInfo.cs
+E:\VS Working\.net core\TakeOutSystem\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.dll
+E:\VS Working\.net core\TakeOutSystem\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAO.pdb

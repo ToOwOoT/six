@@ -1,0 +1,8 @@
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAL.deps.json
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAL.dll
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAL.csprojAssemblyReference.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAL.AssemblyInfoInputs.cache
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAL.AssemblyInfo.cs
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\bin\Debug\netcoreapp3.1\TakeOut.DAL.pdb
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAL.dll
+E:\VS Working\.net core\NetCoreVueElementUIDemo_Tabs\TakeOut.DAL\obj\Debug\netcoreapp3.1\TakeOut.DAL.pdb
